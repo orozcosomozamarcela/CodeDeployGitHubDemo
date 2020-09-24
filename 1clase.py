@@ -18,11 +18,14 @@ for n in range(0,102):
 # Crear un programa que imprima por pantalla todos los números del 0 al 100 que sean divisibles por 3.
 # aca la profe explica como creaba una funcion con def
 def ejercicio3():
-    for numero in range(0, 101):
-        if numero % 3 == 0:
+    for numero in range(0, 101): # esto como es un for va a ser n
+        if numero % 3 == 0: #es una constante, para las condicionales siempre depende de lo que se esta tratando de resolver,
+		# en este caso la complejidad va a ser siempre 1 por lo tanto es n ya que es 1*1 siempre en este caso.
              print(numero)
-#ejercicio3()
+ejercicio3()
 #cuando se utiliza funciones siempre al terminar el ejercicio se tiene que volver a poner el nombre de la funcion.
+
+
 
 
 # Ejercicio 4
@@ -40,19 +43,24 @@ def ejercicio3():
 # Ejercicio 5
 #Crear un programa que pida al usuario 10 números enteros, los almacene en una lista, ordene los números dentro de la lista y #luego imprima por pantalla la lista completa y ordenada.
 def ejercicio5():
-    valorList = []
-    for numero in range (10):
-        valorList.append(int(input("Ingrese un numero entero: ")))
+    valorList = [] # las asignaciones son Contantes. por la tanto queda 1
+    for numero in range (10): # en ciclo es n siempre.
+
+	#QUE DIJIMOS QUE HACIAMOS CON LAS CONSTANTES FRENTE A LOS VALORES DE COMPLEJIDAD MAYORES, NO LAS TOMAMOS EN CUENTA.
+        valorList.append(int(input("Ingrese un numero entero: "))) # 1
+		 # las asiganciones que son append van a ser Constantes en su complejidad
         #se puede hacer de esa forma append (metodo)mas rapido o sino como esta abajo escrito que es mas largo.
         #valor = int(input("Ingrese un numero entero"))
         #valorList.append(valor)
     print (valorList)
-    valorList.sort()
+    valorList.sort() # en el caso de Sort # n log n, entonces la complejidad de este algoritmo es: O(n log (n)) que lo mismo que n log n . siempre tomamos el del peor de los casos.
     print (valorList)
 
 
 ejercicio5()
 #Para ordenar una lista se utiliza un metodo en este caso Sort.
+
+
 # Ejercicio 6
 #
 # Crear un programa que le pida al usuario dos números enteros y luego: si el primero es mayor que el segundo, retorne 1, si el primero es menor que el segundo retorne -1 y si ambos números son iguales retorne 0.
@@ -93,8 +101,8 @@ print (resultado)
 #
 # Crear un programa que, dado un string, retorne la longitud de la última palabra. Se considera que las palabras están separadas por uno o más espacios. También podría haber espacios al principio o al final del string pasado por parámetro.
 def ejercicio11(userInput):
-	palabraList = userInput.split()
-	return len(palabraList[])
+	palabraList = userInput.split()  #PROBABLEMENTE ESTE SEA LUNEAL.
+	return len(palabraList[-1])
 
 resultado = ejercicio11("Bienvenidos a Paradigmas de Programación")
 print(resultado)
