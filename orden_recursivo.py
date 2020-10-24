@@ -32,7 +32,7 @@ def  merge ( lista1 , lista2 ):
         if ( lista1 [ i ] <  lista2 [ j ]):
             print ( f" lista 1 valor { lista1 [ i ] }   es menor a lista2   { lista2 [ j ] } " )
             resultado.append ( lista1 [ i ])
-            i  + =  1
+            i  +=  1
         else:
             print ( f" lista 2 valor { lista2 [ j ] }   es menor a lista1   { lista1 [ i ] } " )
 
@@ -42,14 +42,14 @@ def  merge ( lista1 , lista2 ):
 
     # Agregar lo que falta
     print ( "queda" , resultado )
-    resultado  + =  lista1 [ i :]
+    resultado  +=  lista1 [ i :]
     print ( "despues de agregar al resto I" , resultado )
 
-    resultado  + =  lista2 [ j :]
+    resultado  +=  lista2 [ j :]
     print ( "despues de agregar al resto J" , resultado )
 
 
     return  resultado
 
 
-print ( merge_sort ([ 6 , 7 , - 1 , 0 , 5 , 2 , 3 , 8 , 9 ]))
+print ( merge_sort ([ 6 , 7 , - 1 , 0 , 5 , 2 , 3 , 8  ]))

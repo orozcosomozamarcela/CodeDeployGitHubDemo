@@ -1,8 +1,8 @@
 # "" "
 
-Una empresa de autopistas tiene instalada una camara en el peaje que cuenta el numero de vehiculos que pasa, y unas gomas en el piso que cuentan el numero de ruedas de esos vehiculos.
-Se pide elaborar un algoritmo que a partir del numero de vehiculos y el numero de ruedas extraiga la cantidad de coches y motos que pasan por allí
-# "" "
+"""Una empresa de autopistas tiene instalada una camara en el peaje que cuenta el numero de vehiculos que pasa, y unas gomas en el piso que cuentan el numero de ruedas de esos vehiculos.
+Se pide elaborar un algoritmo que a partir del numero de vehiculos y el numero de ruedas extraiga la cantidad de coches y motos que pasan por allí"""
+
 #autos de 4 ruedas y motos de 2 ruedas.
 # entonces por ejemplo seria:
 
@@ -40,27 +40,27 @@ EN ESTE EJEMPLO TENEMOS LA SIMPLIFICACION HASTA LINEAL
 
 # ORDEN DE COMPLEJIDAD = O (n) lineal
 def  cochesYmotosLineal ( vehiculos , ruedas ):
-    para  coche  en  rango ( vehiculos  +  1 ): # N
+    for  coche  in  range ( vehiculos  +  1 ): # N
         moto  =  vehiculos  -  coche
-        print ( f "cantidad coches { coche } y motos { moto } y de vehiculos {  vehiculos } " )
+        print ( f" cantidad coches { coche } y motos { moto } y de vehiculos {  vehiculos } " )
 
         if (( coche  +  moto  ==  vehiculos ) y ( coche  *  4  +  moto  *  2  ==  ruedas )):
-            print ( f " { coche  *  4 } + { moto * 2 } = { ruedas } " )
-            volver  coche , moto
+            print ( f" { coche  *  4 } + { moto * 2 } = { ruedas } " )
+            return  coche , moto
 
 cochesYmotosLineal ( 6 , 20 )
 
-EN ESTA QUEDA CONSTANTE, LA PROFE HIZO QUE SEA AL FINAL LA SIMPLIFICACION DEL EJERCICIO Y QUE QUEDARA ASI:
+"""EN ESTA QUEDA CONSTANTE, LA PROFE HIZO QUE SEA AL FINAL LA SIMPLIFICACION DEL EJERCICIO Y QUE QUEDARA ASI:"""
 
 # ORDEN COMPLEJIDAD ES : O (1) constante, YA QUE 1*1*1 ES 1
 
 def  cochesYmotos ( vehiculos , ruedas ):
     coche  =  ruedas / 2  -  vehiculos  # 1
     moto  =  vehiculos  -  coche  # 1
-    print ( f "cantidad coches { coche } y motos { moto } y de vehiculos {  vehiculos } " )
+    print ( f"cantidad coches { coche } y motos { moto } y de vehiculos {  vehiculos } " )
 
     if ( int ( coche ) +  int ( moto ) ==  vehiculos ): # 1
-        print ( f " { int ( coche ) *  4 } + { int ( moto ) * 2 } = { ruedas } " )
+        print ( f" { int ( coche ) *  4 } + { int ( moto ) * 2 } = { ruedas } " )
         return  int ( coche ), int ( moto )
 
 cochesYmotos ( 6 , 20 )
@@ -69,12 +69,12 @@ cochesYmotos ( 6 , 20 )
 
 
 
-HICIMOS LOS TRES TIPOS DE ORDEN DE COMPLEJIDAD QUE EXPLICÓ LA PROFE, PRIMERO EL ORDEN DE COMPLEJIDAD CUADRATICA, LUEGO LA LINEAL Y POR ULTIMO LA CONSTANTE.
+"""HICIMOS LOS TRES TIPOS DE ORDEN DE COMPLEJIDAD QUE EXPLICÓ LA PROFE, PRIMERO EL ORDEN DE COMPLEJIDAD CUADRATICA, LUEGO LA LINEAL Y POR ULTIMO LA CONSTANTE."""
 
 
 
 
-ESTO SERíA LA LÓGICA DE MATEMÁTICAS
+"""ESTO SERíA LA LÓGICA DE MATEMÁTICAS
 
 x+y1 = 3
 
@@ -105,4 +105,4 @@ y, sustituyendo el valor de x en cualquiera de las dos ecuaciones del sistema, o
 
 y =
 
-Por lo tanto, podemos concluir diciendo que hay
+"""
