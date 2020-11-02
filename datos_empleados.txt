@@ -1,0 +1,6 @@
+nombre,area,mes de cumpleaños
+agustin,marketing,septiembre
+carlos,despacho, agosto
+jaoquin,recursos, julio,
+fernando,tapizado, febrero,
+macarena,humanos, Octubre

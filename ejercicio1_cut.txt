@@ -1,0 +1,4 @@
+127.0.0.1 - error 404 - pagina no encontrada
+198.345.234 - error 500 - servidor caido , contacte al administrador
+127.0.0.1 - error 503 - servicio no disponible
+195.156.124 - num 502 - no autorizado
